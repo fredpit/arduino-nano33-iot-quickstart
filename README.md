@@ -15,8 +15,9 @@ To build embedded programs using this template you'll need:
 - `rust-std` components (pre-compiled `core` crate) for the ARM Cortex-M
   targets. Run:
 
+- `arm-thumbv6m-none-eabi` target.
 ``` console
-$ rustup target add thumbv6m-none-eabi thumbv7m-none-eabi thumbv7em-none-eabi thumbv7em-none-eabihf
+$ rustup target add thumbv6m-none-eabi
 ```
 
 ## Using this template
@@ -27,4 +28,6 @@ programs, check [the embedded Rust book][book].
 
 [book]: https://rust-embedded.github.io/book
 
-
+``` console
+$ cargo generate --git https://github.com/fredpit/arduino-nano33-iot-quickstart
+```
